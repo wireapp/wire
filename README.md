@@ -1,18 +1,18 @@
 # What is *Wire*
 
-[Wire](https://wire.com)™ is a an app for modern, private communications. It is private and secure, and we released those components of the app that take care of encryption and data handling as Open Source.
+[Wire](https://wire.com)™ is a an app for modern, private communications. So far we released those components of the app that take care of encryption and data handling as Open Source.
 
 Wire is available for a number of platforms: iOS, Android, OSX, Windows, and modern web browsers.
 
-The [privacy page](https://wire.com/privacy/) and the [privacy](https://wire.com/resource/Wire%20Privacy%20Whitepaper/download/) and [security](https://wire.com/resource/Wire%20Security%20Whitepaper/download/) whitepapers explain the details of the encryption algorithms and protocols used. 
-The source code that implements those algorithm and protocols can be found in the following section.
+The [privacy page](https://wire.com/privacy/) and the [privacy](https://wire.com/resource/Wire%20Privacy%20Whitepaper/download/) and [security](https://wire.com/resource/Wire%20Security%20Whitepaper/download/) whitepapers explain the details of the encryption algorithms and protocols used.
+The source code that implements those algorithms and protocols can be found in the following section.
 
 # Wire architecture
 
-The Wire mobile app has an architectural layer that we call *sync engine*. It is the client-side layer that processes all the data that is displayed in the mobile app. It handles network communication and authentication with the backend, native pushes, local caching of data, client-side business logic, signaling with the audio-video libraries, encryption and decryption (using encryption libraries from a lower level) and other bits and pieces.
+The Wire mobile app has an architectural layer that we call *sync engine*. It is the client-side layer that processes all the data that is displayed in the mobile app. It handles network communication and authentication with the backend, push notifications, local caching of data, client-side business logic, signaling with the audio-video libraries, encryption and decryption (using encryption libraries from a lower level) and other bits and pieces.
 
-The user interface layer of the mobile app is built on top of *sync engine*, which provides the data to display to the UI.
-Sync engine itself is built on top of a few third-party frameworks, and uses Wire components that are shared between platforms for cryptography (Proteus/Cryptobox) and audio-video signaling (AVS).
+The user interface layer of the mobile app is built on top of the *sync engine*, which provides the data to display to the UI.
+The sync engine itself is built on top of a few third-party frameworks, and uses Wire components that are shared between platforms for cryptography (Proteus/Cryptobox) and audio-video signaling (AVS).
 
 ![Mobile app architecture](/assets/mobile-architecture.png?raw=true "Mobile app architecture")
 
@@ -20,7 +20,7 @@ We are looking into releasing more components in the future. For the moment, we 
 
 ## iOS
 
-*ZMessaging-cocoa* is the top-most layer of the iOS *sync engine*, and it is using on a number of lower-level frameworks. *ZMessaging-cocoa* and the lower-lever frameworks constitute the iOS *sync engine*, as illustrated in the following picture. 
+*ZMessaging-cocoa* is the top-most layer of the iOS *sync engine*, and it is using on a number of lower-level frameworks. *ZMessaging-cocoa* and the lower-lever frameworks constitute the iOS *sync engine*, as illustrated in the following picture.
 
 ![iOS architecture](/assets/ios-architecture.png?raw=true "iOS architecture")
 
@@ -47,7 +47,7 @@ The Android *sync engine* is developed in Scala.
 
 - [zmessaging-android](https://github.com/wireapp/zmessaging-android): Sync engine library for Android, in Scala
 - [cryptobox-jni](https://github.com/wireapp/cryptobox-jni): JNI bindings for cryptobox with support for cross-compilation to Android
- 
+
 
 ## Web App & Native Apps
 
