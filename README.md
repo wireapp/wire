@@ -45,7 +45,7 @@ The Android *sync engine* is developed in Scala.
 
 ### Repositories
 
-- [zmessaging-android](zmessaging-android): Sync engine library for Android, in Scala
+- [zmessaging-android](https://github.com/wireapp/zmessaging-android): Sync engine library for Android, in Scala
 - [cryptobox-jni](https://github.com/wireapp/cryptobox-jni): JNI bindings for cryptobox with support for cross-compilation to Android
  
 
@@ -57,15 +57,15 @@ The cryptography libraries used in Wire for Web are the following:
 
 ### Repositories
 
-- [cbor-codec.js](cbor-codec.js): JavaScript implementation of [CBOR](http://cbor.io/) 
-- [cryptobox-bower](cryptobox-bower): Redistributables of Cryptobox
-- [cryptobox.js](cryptobox.js): API layer for Proteus
-- [libsodium.js](libsodium.js): JavaScript implementation of [Sodium](https://download.libsodium.org/doc/), with convenient wrappers 
-- [proteus.js](proteus.js): Implementation of the Axolotl protocol
+- [cbor-codec.js](https://github.com/wireapp/cbor-codec.js): JavaScript implementation of [CBOR](http://cbor.io/) 
+- [cryptobox-bower](https://github.com/wireapp/cryptobox-bower): Redistributables of Cryptobox
+- [cryptobox.js](https://github.com/wireapp/cryptobox.js): API layer for Proteus
+- [libsodium.js](https://github.com/wireapp/libsodium.js): JavaScript implementation of [Sodium](https://download.libsodium.org/doc/), with convenient wrappers 
+- [proteus.js](https://github.com/wireapp/proteus.js): Implementation of the Axolotl protocol
 
 ### Dependencies
 
-[cryptobox-bower](cryptobox-bower) → [cryptobox.js](cryptobox.js) → [proteus.js](proteus.js) → [libsodium.js](libsodium.js) & [cbor-codec.js](cbor-codec.js)
+[cryptobox-bower](https://github.com/wireapp/cryptobox-bower) → [cryptobox.js](https://github.com/wireapp/cryptobox.js) → [proteus.js](https://github.com/wireapp/proteus.js) → [libsodium.js](https://github.com/wireapp/libsodium.js) & [cbor-codec.js](https://github.com/wireapp/cbor-codec.js)
 
 ## AVS
 
@@ -82,10 +82,10 @@ The Axolotl protocol implementation and other cryptographic and utility librarie
 ### Repositories
 
 - [proteus](https://github.com/wireapp/proteus): Axolotl Protocol Implementation in Rust, then cross compiled for iOS and Android
-- [libsodium](libsodium): A modern and easy-to-use crypto library. 
-- [cryptobox](cryptobox): High-level API with persistent storage for proteus
-- [cryptobox-haskell](cryptobox-haskell): Haskell bindings to cryptobox
-- [cryptobox-c](cryptobox-c): C-FFI to cryptobox 
+- [libsodium](https://github.com/wireapp/libsodium): A modern and easy-to-use crypto library. 
+- [cryptobox](https://github.com/wireapp/cryptobox): High-level API with persistent storage for proteus
+- [cryptobox-haskell](https://github.com/wireapp/cryptobox-haskell): Haskell bindings to cryptobox
+- [cryptobox-c](https://github.com/wireapp/cryptobox-c): C-FFI to cryptobox 
 - [hkdf](https://github.com/wireapp/hkdf): HKDF implementation (RFC 5869) in Rust, then cross compiled to iOS and Android
 
 ## Common definitions
