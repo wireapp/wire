@@ -1,10 +1,13 @@
 # What is *Wire*
 
-[Wire](https://wire.com)™ is a an app for modern, private communications. We released those components of the app that take care of encryption and data handling as Open Source.
+[Wire](https://wire.com) is a an app for modern, private communications. It offers text, voice, video and sending media, and all user communication on Wire is end-to-end encrypted.
 
-Wire is available for a number of platforms: iOS, Android, OSX, Windows, and modern web browsers.
+We've released components of the app that take care of encryption and data handling as Open Source.
+
+Wire is available for iOS, Android, OS X, Windows, and modern web browsers.
 
 The [privacy page](https://wire.com/privacy/) and the [privacy](https://wire.com/resource/Wire%20Privacy%20Whitepaper/download/) and [security](https://wire.com/resource/Wire%20Security%20Whitepaper/download/) whitepapers explain the details of the encryption algorithms and protocols used.
+
 The source code that implements those algorithms and protocols can be found in the following section.
 
 # Wire architecture
