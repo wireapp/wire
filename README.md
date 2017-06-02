@@ -1,6 +1,6 @@
 # Wire™
 
-![Wire logo](https://github.com/wireapp/wire/blob/master/assets/logo.png?raw=true)
+[![Wire logo](https://github.com/wireapp/wire/blob/master/assets/header-small.png?raw=true)](https://wire.com/jobs/)
 
 # Open source
 
@@ -23,6 +23,9 @@ See [wire-ios](https://github.com/wireapp/wire-ios)
 
 ## Android
 See [wire-android](https://github.com/wireapp/wire-android)
+
+## Desktop
+See [wire-desktop](https://github.com/wireapp/wire-desktop)
 
 ## Wire for Web
 See [wire-webapp](https://github.com/wireapp/wire-webapp)
@@ -49,6 +52,10 @@ The Axolotl protocol implementation and other cryptographic and utility librarie
 - [cryptobox-c](https://github.com/wireapp/cryptobox-c): C-FFI to cryptobox 
 - [hkdf](https://github.com/wireapp/hkdf): HKDF implementation (RFC 5869) in Rust, then cross compiled to iOS and Android
 
+## Server
+
+The Wire server components can be found in the [wire-server](https://github.com/wireapp/wire-server) repository.
+
 ## Common definitions
 
 Protocol buffer definitions are used by all clients to communicate with each other and with the backend.
@@ -57,4 +64,22 @@ Protocol buffer definitions are used by all clients to communicate with each oth
 
 - [generic-message-proto](https://github.com/wireapp/generic-message-proto): Protocol buffer definitions that are part of the cross-platform client communication protocol
 - [backend-api-protobuf](https://github.com/wireapp/backend-api-protobuf): Protocol buffer definitions that are part of the backend communication protocol 
+
+# Contributions
+
+You can contribute to Wire in several ways:
+
+## Finding bugs
+
+If you find a bug in how Wire apps work, please submit a ticket to [our support](https://wire.com/support) and we will keep you informed about the progress.
+
+## Contributing to the code
+
+If you wish to contribute source code to one of our repositories you have to sign our [Contributor Agreement](https://github.com/wireapp/wire/raw/master/assets/Wire%20Contributor%20Agreement.pdf) first.
+
+When you submit your first pull request, you can sign the agreement electronically by filling in the required information. You will not have to sign it again for subsequent pull requests from the same GitHub account.
+
+## Translating the apps
+
+You can help with the crowdsourced translations from Wire Apps on [Crowdin](https://crowdin.com/projects/wire).
 
