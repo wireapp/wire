@@ -1,10 +1,10 @@
 # Security Policy
 
-To report a vulnerability see contact details [below](#reporting-a-vulnerability)
+To report a vulnerability see contact details [below](#reporting-a-vulnerability).
 
 ## Security incident policy
-Security bug reports are treated withe special attention and are handled differently from normal bugs.
-In particular, security sensitive bugs are not handled on public issue trackers on Github or other company-wide accessible tools but in a private bug tracker.
+Security bug reports are treated with special attention and are handled differently from normal bugs.
+In particular, security sensitive bugs are not handled on public issue trackers on GitHub or other company-wide accessible tools but in a private bug tracker.
 Information about the bug and access to it is restricted to people in the security bug group, the individual engineers that work on fixing it, and any other person who needs to be involved for organisational reasons.
 The process is handled by the security team, which decides on the people involved in order to fix the issue.
 It is also guaranteed that the person reporting the issue has visibility into the process of fixing it.
@@ -15,9 +15,9 @@ The issue might not be public at the time of the release, depending on the agree
 
 ## Tracking security issues
 Security issues are tracked on an internal vulnerabilities project that can only be accessed by a small number of people.
-Once a security issue is triaged and the appropriate code repository is identified, a draft security advisory is created on the corresponding Github repository.
+Once a security issue is triaged and the appropriate code repository is identified, a draft security advisory is created on the corresponding GitHub repository.
 This gives the corresponding team access to the vulnerability and allows to involve all people necessary to fix the issue.
-Once the issue has been fixed and the embargo ends the advisory is published to the Github advisory database.
+Once the issue has been fixed and the embargo ends the advisory is published to the GitHub advisory database.
 
 ## Post mortems
 Any security issues must be followed by a post mortem to analyze the cause and resolution for the incident.
