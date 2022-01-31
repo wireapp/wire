@@ -4,9 +4,9 @@
 
 # Open source
 
-The [privacy page](https://wire.com/privacy/) and the [privacy](https://wire-docs.wire.com/download/Wire+Privacy+Whitepaper.pdf) and [security](https://wire-docs.wire.com/download/Wire+Security+Whitepaper.pdf) whitepapers explain the details of the encryption algorithms and protocols used.
+The [privacy page](https://wire.com/en/legal/terms-of-use-personal/#legal3) and the [privacy](https://wire-docs.wire.com/download/Wire+Privacy+Whitepaper.pdf) and [security](https://wire-docs.wire.com/download/Wire+Security+Whitepaper.pdf) whitepapers explain the details of the encryption algorithms and protocols used.
 
-For licensing information, see the attached LICENSE file and the list of third-party licenses at [wire.com/legal/licenses/](https://wire.com/legal/licenses/).
+For licensing information, see the attached [LICENSE file](LICENSE) and the [list of third-party licenses at wire.com](https://wire.com/en/legal/terms-of-use-personal/#legal5).
 
 If you compile the open source software that we make available from time to time to develop your own mobile, desktop or web application, and cause that application to connect to our servers for any purposes, we refer to that resulting application as an “Open Source App”.  All Open Source Apps are subject to, and may only be used and/or commercialized in accordance with, the Terms of Use applicable to the Wire Application, which can be found at https://wire.com/legal/#terms.  Additionally, if you choose to build an Open Source App, certain restrictions apply, as follows:
 
@@ -74,7 +74,7 @@ You can contribute to Wire in several ways:
 
 ## Finding bugs
 
-If you find a bug in how Wire apps work, please submit a ticket to [our support](https://wire.com/support) and we will keep you informed about the progress.
+If you find a bug in how Wire apps work, please submit a ticket to [our support](https://support.wire.com) and we will keep you informed about the progress.
 
 ## Contributing to the code
 
