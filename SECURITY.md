@@ -56,6 +56,34 @@ We commit to fixing any security issue that we rate “moderate” or higher wit
 * Contact: [vulnerability-report@wire.com](mailto:vulnerability-report@wire.com)
 * Encryption: [PGP Key](#pgp-key)
 
+## Security Ratings
+Every vulnerability is rated with one of the following four security levels:
+* critical
+* high
+* moderate
+* low
+
+security issues include but are not limited to:
+* Remote code execution
+* (Reflected) XSS
+* CSRF
+* TLS failure
+* Authentication issues
+* Memory corruption
+
+### Critical security issues
+Any critical security issue requires an immediate fix and subsequent point release.
+An issue is critical if it is technically a high security issue that is known to be currently exploited or would put a high number of users at severe risk if being exploited.
+
+### High security issues
+An issue is marked as high if it is exploitable and would lead to compromise of user data.
+
+### Moderate security issues
+These issues are generally not as severe as high security issues because they require user interaction or require other additional circumstances/vulnerabilities to be exploitable.
+
+### Low security issues
+These issues have security implications but don’t have any (known) exploit path (or the exploit requires excessive resources, or is very limited in scope, or leaks insensitive information).
+
 ## PGP Key
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -111,32 +139,3 @@ mD++rS3VQR9K
 =sQT+
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
-## Security Ratings
-Every vulnerability is rated with one of the following four security levels:
-* critical
-* high
-* moderate
-* low
-
-security issues include but are not limited to:
-* Remote code execution
-* (Reflected) XSS
-* CSRF
-* TLS failure
-* Authentication issues
-* Memory corruption
-
-### Critical security issues
-Any critical security issue requires an immediate fix and subsequent point release.
-An issue is critical if it is technically a high security issue that is known to be currently exploited or would put a high number of users at severe risk if being exploited.
-
-### High security issues
-An issue is marked as high if it is exploitable and would lead to compromise of user data.
-
-### Moderate security issues
-These issues are generally not as severe as high security issues because they require user interaction or require other additional circumstances/vulnerabilities to be exploitable.
-
-### Low security issues
-These issues have security implications but don’t have any (known) exploit path (or the exploit requires excessive resources, or is very limited in scope, or leaks insensitive information).
-
