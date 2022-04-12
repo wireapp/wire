@@ -1,16 +1,16 @@
 # Security Policy
 
-To report a vulnerability see contact details [below](#reporting-a-vulnerability).
+While there’s currently no bug bounty program we appreciate every report (see [contact details](#reporting-a-vulnerability)).
 
 ## Security incident policy
 Security bug reports are treated with special attention and are handled differently from normal bugs.
 In particular, security sensitive bugs are not handled on public issue trackers on GitHub or other company-wide accessible tools but in a private bug tracker.
-Information about the bug and access to it is restricted to people in the security bug group, the individual engineers that work on fixing it, and any other person who needs to be involved for organisational reasons.
+Information about the bug and access to it is restricted to people in the security team, the individual engineers that work on fixing it, and any other person who needs to be involved for organizational reasons.
 The process is handled by the security team, which decides on the people involved in order to fix the issue.
 It is also guaranteed that the person reporting the issue has visibility into the process of fixing it.
 Any security issue gets prioritized according to its security rating.
 The issue is opened up to the public in coordination with the release schedule and the reporter.
-Security fixes are mentioned in the release notes in a separate section called "Security Fixes" and link to the according advisory and/or issue.
+Security fixes are mentioned in the release notes in a separate section called "Security Fixes" and link to the advisory and/or issue.
 The issue might not be public at the time of the release, depending on the agreed embargo time, but fully documents the issue and any fixes.
 
 ## Tracking security issues
@@ -24,7 +24,7 @@ Any security issues must be followed by a post mortem to analyze the cause and r
 This template should be used for that purpose.
 The document is then stored alongside the vulnerability for future reference.
 
-### Vulnerability Approval Process
+## Vulnerability Approval Process
 While working on security issues, it is important that we don’t disclose the issue to a wider audience prematurely.
 It is therefore necessary that any commit related to security fixes should not obviously be identifiable as such.
 Therefore tests pointing to the issue might be landed later, commit messages should be obscured, and comments and code should not refer to the issue in any obvious way.
@@ -33,29 +33,56 @@ This ensures that the principles above are followed.
 
 ## Internal escalation path
 When a security issue is identified and entered in the vulnerability tracker it first gets assessed by the security team.
-After the assessment, the team leads responsible for the component where the vulnerability lies and the engineering VPs get involved.
+After the assessment, the team leads who are responsible for the component where the vulnerability lies and the engineering VPs get involved.
 Depending on the security rating, the CTO and CEO may get informed as well.
 If the vulnerability is relevant to data protection laws, the data protection officer is also informed.
 
 ## Disclosure Policy
-Everyone involved in the handling of a security issue – including the reporter – is expected to adhere to the following policy.
+Everyone involved in the handling of a security issue - including the reporter - is expected to adhere to the following policy.
 Any information related to a security issue must be treated as confidential and only shared with trusted partners if necessary, for example to coordinate a release or manage exposure of clients to the issue.
-No information must be disclosed to the public before the embargo ends. The embargo time is agreed upon by all involved parties.
+No information must be disclosed to the public before the embargo ends.
+The embargo time is agreed upon by all involved parties.
 It should be as short as possible without putting any users at risk.
 
 ## Supported Versions
 Only the most recent version of each application is supported.
 
-While there’s currently no bug bounty program we appreciate every report (see [contact details](#reporting-a-vulnerability) below).
-
 ## Reporting a Vulnerability
 Every vulnerability report will be assessed within 24 hours of receiving it.
 If the outcome of the assessment is that the report describes a security issue, the report will be transferred into an issue on the internal vulnerability project for further processing.
 The reporter is updated on each step of the process.
-We commit to fixing any security issue that we rate MODERATE or higher within 90 days.
+We commit to fixing any security issue that we rate “moderate” or higher within 90 days.
 
 * Contact: [vulnerability-report@wire.com](mailto:vulnerability-report@wire.com)
 * Encryption: [PGP Key](#pgp-key)
+
+## Security Ratings
+Every vulnerability is rated with one of the following four security levels:
+* critical
+* high
+* moderate
+* low
+
+security issues include but are not limited to:
+* Remote code execution
+* (Reflected) XSS
+* CSRF
+* TLS failure
+* Authentication issues
+* Memory corruption
+
+### Critical security issues
+Any critical security issue requires an immediate fix and subsequent point release.
+An issue is critical if it is technically a high security issue that is known to be currently exploited or would put a high number of users at severe risk if being exploited.
+
+### High security issues
+An issue is marked as high if it is exploitable and would lead to compromise of user data.
+
+### Moderate security issues
+These issues are generally not as severe as high security issues because they require user interaction or require other additional circumstances/vulnerabilities to be exploitable.
+
+### Low security issues
+These issues have security implications but don’t have any (known) exploit path (or the exploit requires excessive resources, or is very limited in scope, or leaks insensitive information).
 
 ## PGP Key
 ```
@@ -112,32 +139,3 @@ mD++rS3VQR9K
 =sQT+
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
-## Security Ratings
-Every vulnerability is rated with one of the following four security levels:
-* critical
-* high
-* moderate
-* low
-
-security issues include but are not limited to:
-* Remote code execution
-* (Reflected) XSS
-* CSRF
-* TLS failure
-* Authentication issues
-* Memory corruption
-
-### Critical security issues
-Any critical security issue requires an immediate fix and subsequent point release.
-An issue is critical if it is technically a high security issue that is known to be currently exploited or would put a high number of users at severe risk if being exploited.
-
-### High security issues
-An issue is marked as high if it is exploitable and would lead to compromise of user data.
-
-### Moderate security issues
-These issues are generally not as severe as high security issues because they require user interaction or require other additional circumstances/vulnerabilities to be exploitable.
-
-### Low security issues
-These issues have security implications but don’t have any (known) exploit path (or the exploit requires excessive resources, or is very limited in scope, or leaks insensitive information).
-
