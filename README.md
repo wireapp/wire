@@ -25,7 +25,7 @@ No license is granted to the Wire trademark and its associated logos, all of whi
 See [wire-ios](https://github.com/wireapp/wire-ios)
 
 ## Android
-See [wire-android](https://github.com/wireapp/wire-android)
+See [wire-android](https://github.com/wireapp/wire-android) (legacy version) and [wire-android-reloaded](https://github.com/wireapp/wire-android-reloaded) (modern version)
 
 ## Desktop
 See [wire-desktop](https://github.com/wireapp/wire-desktop)
