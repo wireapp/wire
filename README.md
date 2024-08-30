@@ -25,7 +25,7 @@ No license is granted to the Wire trademark and its associated logos, all of whi
 See [wire-ios](https://github.com/wireapp/wire-ios)
 
 ## Android
-See [wire-android](https://github.com/wireapp/wire-android) (legacy version) and [wire-android-reloaded](https://github.com/wireapp/wire-android-reloaded) (modern version)
+See [wire-android](https://github.com/wireapp/wire-android)
 
 ## Desktop
 See [wire-desktop](https://github.com/wireapp/wire-desktop)
@@ -37,23 +37,19 @@ See [wire-webapp](https://github.com/wireapp/wire-webapp)
 
 ## AVS
 
-The audio, video, and signaling (AVS) library of Wire is developed in ANSI C/C++. The code is cross compiled for Android and iOS. Wrappers for interaction with upstream modules are written in Java for Android and Objective-C for iOS.
+The audio, video, and signaling (AVS) library of Wire is developed in ANSI C/C++. The code is cross compiled for Android, iOS and web/desktop (WASM). Wrappers for interaction with upstream modules are written in Java for Android and Objective-C for iOS.
 
 ### Repositories
 
-- [avs](https://github.com/wireapp/avs): Audio-video library for calling (mostly C), then cross compiled for iOS and Android
+- [avs](https://github.com/wireapp/avs)
 
-## Proteus/Cryptobox
+## Core Crypto
 
-The Axolotl protocol implementation and other cryptographic and utility libraries are developed in Rust, then cross-compiled for iOS and Android. The web version has its own port of these libraries in JavaScript.
+The encryption layer of Wire, which contains the Axolotl protocol implementation and other cryptographic and utility libraries. These are developed in Rust, then cross-compiled for iOS, Android and web/desktop (WASM).
 
 ### Repositories
 
-- [proteus](https://github.com/wireapp/proteus): Axolotl Protocol Implementation in Rust, then cross compiled for iOS and Android
-- [cryptobox](https://github.com/wireapp/cryptobox): High-level API with persistent storage for proteus
-- [cryptobox-haskell](https://github.com/wireapp/cryptobox-haskell): Haskell bindings to cryptobox
-- [cryptobox-c](https://github.com/wireapp/cryptobox-c): C-FFI to cryptobox
-- [hkdf](https://github.com/wireapp/hkdf): HKDF implementation (RFC 5869) in Rust, then cross compiled to iOS and Android
+- [Core Crypto](https://github.com/wireapp/core-crypto)
 
 ## Server
 
